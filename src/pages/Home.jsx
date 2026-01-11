@@ -1,7 +1,7 @@
 import React from 'react';
 import HeroSection from '../components/home/HeroSection';
 import SearchForm from '../components/home/SearchForm';
-import WhyChooseUs from '../components/home/WhyChooseUs';
+import WhyChooseU from '../components/home/WhyChooseUs';
 import HowItWorks from '../components/home/HowItWorks';
 import AISupporter from '../components/home/AISupporter';
 
@@ -10,7 +10,7 @@ const Home = () => {
     <div>
       <HeroSection />
       <SearchForm />
-      <WhyChooseUs />
+      <WhyChooseU />
       <HowItWorks />
       <AISupporter />
     </div>

@@ -2,34 +2,35 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import logo from '../assets/baha-logo-new.png';
 import howBg from '../assets/how_bg.png';
+import clouds from '../assets/footer_cloud.png';
 
 const Footer = () => {
   return (
-    <footer 
-      className="relative w-full pt-[80px] pb-8 mt-10 bg-cover bg-center overflow-hidden"
+    <footer
+      className="relative w-full pt-12 md:pt-16 lg:pt-[80px] pb-8 mt-10 bg-cover bg-center overflow-hidden"
       style={{ backgroundImage: `url(${howBg})` }}
     >
-      <div className="max-w-[1440px] mx-auto px-[100px] relative z-10">
-        <div className="grid grid-cols-[1.5fr_1fr_1fr_1.2fr] gap-12 mb-16">
+      <div className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] relative z-10">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 md:gap-10 lg:gap-12 mb-12 md:mb-16">
           {/* Logo and Description */}
-          <div className="space-y-6">
-            <Link to="/">
-              <img src={logo} alt="Bahaa Logo" className="h-[120px] w-auto object-contain" />
+          <div className="space-y-6 text-center md:text-left">
+            <Link to="/" className="inline-block">
+              <img src={logo} alt="Bahaa Logo" className="h-20 md:h-24 lg:h-[120px] w-auto object-contain mx-auto md:mx-0" />
             </Link>
-            <p className="text-[18px] text-gray-600 font-salsa leading-[28px] max-w-[300px]">
+            <p className="text-base md:text-[18px] text-gray-600 font-salsa leading-[28px] max-w-[300px] mx-auto md:mx-0">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry.
             </p>
             {/* Social Icons */}
-            <div className="flex gap-4 pt-2">
+            <div className="flex gap-4 pt-2 justify-center md:justify-start">
               {[
                 { icon: <WhatsappIcon />, href: "#" },
                 { icon: <TwitterIcon />, href: "#" },
                 { icon: <FacebookIcon />, href: "#" },
                 { icon: <InstagramIcon />, href: "#" }
               ].map((social, index) => (
-                <a 
-                  key={index} 
-                  href={social.href} 
+                <a
+                  key={index}
+                  href={social.href}
                   className="w-[45px] h-[45px] rounded-full border border-dark-blue flex items-center justify-center text-dark-blue hover:bg-dark-blue hover:text-white transition-all duration-300"
                 >
                   {social.icon}
@@ -39,13 +40,13 @@ const Footer = () => {
           </div>
 
           {/* Quick Links */}
-          <div className="pt-8">
-            <h3 className="text-[24px] font-bold text-dark-blue mb-6 font-salsa">Quick Links</h3>
-            <ul className="space-y-4">
+          <div className="pt-0 md:pt-8 text-center md:text-left">
+            <h3 className="text-xl md:text-[24px] font-bold text-dark-blue mb-4 md:mb-6 font-salsa">Quick Links</h3>
+            <ul className="space-y-3 md:space-y-4">
               {['Home', 'Topics', 'Why Choose Us', 'Ai Supporter'].map((item) => (
                 <li key={item}>
-                  <Link 
-                    to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`} 
+                  <Link
+                    to={item === 'Home' ? '/' : `/${item.toLowerCase().replace(/\s+/g, '-')}`}
                     className="text-[18px] text-gray-600 hover:text-cyan font-bold font-salsa transition-colors"
                   >
                     {item}
@@ -56,8 +57,8 @@ const Footer = () => {
           </div>
 
           {/* Extra Links */}
-          <div className="pt-8">
-            <h3 className="text-[24px] font-bold text-dark-blue mb-6 font-salsa">Extra Links</h3>
+          <div className="pt-0 md:pt-8 text-center md:text-left">
+            <h3 className="text-xl md:text-[24px] font-bold text-dark-blue mb-4 md:mb-6 font-salsa">Extra Links</h3>
             <ul className="space-y-4">
               {['Privacy Policy', 'Terms & Conditions', 'Support / Help Center'].map((item) => (
                 <li key={item}>
@@ -70,9 +71,9 @@ const Footer = () => {
           </div>
 
           {/* Contact */}
-          <div className="pt-8">
-            <h3 className="text-[24px] font-bold text-dark-blue mb-6 font-salsa">Contact</h3>
-            <ul className="space-y-6">
+          <div className="pt-0 md:pt-8 text-center md:text-left">
+            <h3 className="text-xl md:text-[24px] font-bold text-dark-blue mb-4 md:mb-6 font-salsa">Contact</h3>
+            <ul className="space-y-4 md:space-y-6">
               <li className="flex items-center gap-4">
                 <div className="w-[45px] h-[45px] rounded-full border border-dark-blue flex items-center justify-center text-dark-blue flex-shrink-0">
                   <MailIcon />
@@ -101,6 +102,13 @@ const Footer = () => {
             Copyright © 2025 <span className="font-alexandria">Qeema tech</span> | All Rights Reserved
           </p>
         </div>
+      </div>
+      <div className="absolute bottom-[-25%] right-[0%] w-full pointer-events-none md:visible">
+        <img
+          src={clouds}
+          alt="Decorative clouds"
+          className="w-full object-cover opacity-100"
+        />
       </div>
     </footer>
   );

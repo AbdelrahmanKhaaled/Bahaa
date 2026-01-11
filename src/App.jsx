@@ -10,6 +10,7 @@ import WhyChooseUs from './pages/WhyChooseUs';
 import AISupporterConversation from './pages/AISupporterConversation';
 import AISupporterVoice from './pages/AISupporterVoice';
 import AISupporter from './components/home/AISupporter';
+import TopicsNoData from './pages/TopicsNoData';
 import './App.css';
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
                   <Route path="/topics" element={<Topics />} />
                   <Route path="/topics/guide" element={<TopicsGuide />} />
                   <Route path="/topics/game" element={<TopicsGame />} />
+                  <Route path="/topics/nodata" element={<TopicsNoData />} />
                   <Route path="/why-choose-us" element={<WhyChooseUs />} />
                   <Route path="/ai-supporter" element={<AISupporter />} />
                   <Route path="/ai-supporter/conversation" element={<AISupporterConversation />} />

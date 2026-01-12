@@ -1,6 +1,6 @@
 import React from 'react';
-import Group from '../../assets/Group 58.png';
 import FeatureCard from './FeatureCard';
+import Group from '../../assets/Group 58.png';
 
 const features = [
   {
@@ -37,7 +37,7 @@ const features = [
 
 const WhyChooseU = () => {
   return (
-    <section className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] py-12 md:py-16 lg:py-24 md:mt-20 lg:mt-[112px]">
+    <section className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] md:my-20 lg:my-[112px]">
       <div className="text-center mb-12 md:mb-14 lg:mb-16">
         <div className="flex items-center justify-center gap-2 mb-4">
           <div className="w-2 h-2 border-2 border-cyan rounded-sm"></div>

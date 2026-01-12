@@ -7,6 +7,7 @@ import we from '../assets/about_we.png';
 import what from '../assets/about_what.png';
 import approach from '../assets/about_approach.png';
 import promise from '../assets/about_promise.png';
+import background from '../assets/about_bg.png';
 import ObjCards from '../reusableComponents/objCards';
 import WhyChooseU from '../components/home/WhyChooseUs';
 
@@ -52,11 +53,12 @@ const WhyChooseUs = () => {
         </div>
         <div className='overflow-hidden mb-[-80px] md:mb-[-120px] lg:mb-[-180px] z-50 bg-cover bg-no-repeat'
           style={{ backgroundImage: `url(${cloud})` }}>
-          <div className="flex justify-center md:gap-6 w-full max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] mb-8 md:mb-12 lg:mb-16 mt-16 md:mt-24 lg:mt-[150px]">
-            {[["ml-[-50px]", "mb-[20px]", "Objectives"], ["ml-[-50px]", "mb-[0px]", "Objectives"], ["ml-[-50px]", "mb-[20px]", "Objectives"], ["ml-[-50px]", "mb-[0px]", "Objectives"]].map((item, idx) => (
-              <ObjCards key={idx} item={item} />
-            ))}
-          </div>
+          {/* Objectives Cards - 4 in a row */}
+        <div className="flex justify-center align-middle mb-12 md:mb-16 mt-16 md:mt-24 lg:mt-[150px]">
+          {[["0", "0", "Creative Minds"], ["ml-[-20px]", "mt-[-50px]", "Global Vision"], ["ml-[-20px]", "", "Education First"], ["ml-[-20px]", "mt-[-50px]", "Trusted Partner"]].map((item, idx) => (
+            <ObjCards key={idx} item={item} />
+          ))}
+        </div>
         </div>
       </section>
 
@@ -64,6 +66,7 @@ const WhyChooseUs = () => {
 
       {/* About Us Section */}
       <section className="relative py-12 md:py-16 lg:py-24">
+      {/* style={{ backgroundImage: `url(${background})` }}> */}
         <div className="absolute inset-0 bg-gradient-to-br from-blue-50 to-white"></div>
 
         <div className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] relative z-10">

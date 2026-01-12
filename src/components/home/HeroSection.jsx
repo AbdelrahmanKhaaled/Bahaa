@@ -7,7 +7,7 @@ import clouds from '../../assets/hero_clouds.png';
 const HeroSection = () => {
   return (
     <section
-      className="relative bg-cover bg-center flex justify-center items-center pt-24 md:pt-32 lg:pt-[212px] pb-16 md:pb-24 lg:pb-32"
+      className="relative bg-cover bg-center flex justify-center items-center pt-24 md:pt-32 lg:pt-[212px] pb-16 md:pb-24 lg:pb-32 overflow-hidden"
       style={{ backgroundImage: `url(${mainBg})` }}
     >
       <div className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] w-full flex flex-col lg:flex-row justify-start items-start  gap-8 lg:gap-12 z-10">

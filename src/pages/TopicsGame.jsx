@@ -6,17 +6,17 @@ const TopicsGame = () => {
     <div className="min-h-screen bg-white">
       <div className="max-w-[1440px] mx-auto px-4 md:px-12 lg:px-[100px] py-8 md:py-12 lg:py-16 pt-24 md:pt-32 lg:pt-[180px]">
         {/* Header Section */}
-        <div className="text-center mb-8 md:mb-12">
-          <div className="flex items-center justify-center gap-2 mb-4">
+        <div className="text-left mb-8 md:mb-12">
+          <div className="flex items-center justify-start gap-2 mb-4">
             <div className="w-2 h-2 border-2 border-cyan rounded-sm"></div>
-            <span className="text-cyan text-base md:text-lg lg:text-xl font-salsa">grammar</span>
+            <span className="text-cyan text-base md:text-lg lg:text-xl font-salsa">Games</span>
           </div>
-          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-salsa px-4">
-            <span className="text-dark-blue">Guide 3: </span>
-            <span className="text-cyan">Interactive Games</span>
+          <h1 className="text-2xl md:text-4xl lg:text-5xl font-bold mb-3 md:mb-4 font-salsa">
+            <span className="text-dark-blue">Interactive</span>
+            <span className="text-cyan"> Games Section</span>
           </h1>
-          <p className="text-base md:text-lg text-gray-dark font-salsa px-4">
-            Play fun games to practice what you've learned
+          <p className="text-base md:text-lg text-gray-dark font-salsa">
+          Learn how fractions work with step-by-step guides, fun games, and a quick quiz
           </p>
         </div>
 

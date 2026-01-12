@@ -27,7 +27,7 @@ const TopicsGuide = () => {
         </div>
 
         {/* Learning Objectives Section - Two Columns */}
-        <div className="flex flex-col md:flex-row justify-between gap-8 md:gap-12 mt-16 md:mt-24 lg:mt-[130px] mb-12 md:mb-16">
+        <div className="flex flex-col md:flex-row gap-[450px] mt-16 md:mt-24 lg:mt-[130px] mb-12 md:mb-16">
           {/* Left Column */}
           <div className="flex-1 space-y-4">
             <h2 className="text-xl md:text-2xl lg:text-3xl font-semibold text-dark-blue font-salsa">Learning Objectives:</h2>
@@ -50,8 +50,8 @@ const TopicsGuide = () => {
         </div>
 
         {/* Objectives Cards - 4 in a row */}
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-12 md:mb-16 mt-16 md:mt-24 lg:mt-[150px]">
-          {[["", "", "Objectives"], ["", "", "Objectives"], ["", "", "Objectives"], ["", "", "Objectives"]].map((item, idx) => (
+        <div className="flex justify-center align-middle mb-12 md:mb-16 mt-16 md:mt-24 lg:mt-[150px]">
+          {[["0", "0", "Objectives"], ["ml-[-20px]", "mt-[-50px]", "Objectives"], ["ml-[-20px]", "", "Objectives"], ["ml-[-20px]", "mt-[-50px]", "Objectives"]].map((item, idx) => (
             <ObjCards key={idx} item={item} />
           ))}
         </div>
@@ -79,7 +79,7 @@ const TopicsGuide = () => {
           </h2>
 
           {/* Cards Grid - 3 columns, 2 rows - now responsive */}
-          <div className="flex flex-col lg:flex-row justify-between items-start gap-6 md:gap-8 lg:gap-12 mb-12">
+          <div className="flex flex-col lg:flex-row justify-between items-center gap-6 md:gap-8 lg:gap-12 mb-12">
             <div className="flex flex-col gap-6 md:gap-8 w-full lg:w-auto">
               {[1, 2].map((item) => (
                 <div
